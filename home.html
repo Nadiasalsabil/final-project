@@ -52,7 +52,81 @@
     color: black !important;
   }
 
+    .circle{
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  animation: ripple 15s infinite;
+  box-shadow: 0px 0px 1px 0px #508fb9;
+}
 
+.small{
+  width: 200px;
+  height: 200px;
+  left: -100px;
+  bottom: -100px;
+}
+
+.medium{
+  width: 400px;
+  height: 400px;
+  left: -200px;
+  bottom: -200px;
+}
+
+.large{
+  width: 600px;
+  height: 600px;
+  left: -300px;
+  bottom: -300px;
+}
+
+.xlarge{
+  width: 800px;
+  height: 800px;
+  left: -400px;
+  bottom: -400px;
+}
+
+.xxlarge{
+  width: 1000px;
+  height: 1000px;
+  left: -500px;
+  bottom: -500px;
+}
+
+.shade1{
+  opacity: 0.2;
+}
+.shade2{
+  opacity: 0.5;
+}
+
+.shade3{
+  opacity: 0.7;
+}
+
+.shade4{
+  opacity: 0.8;
+}
+
+.shade5{
+  opacity: 0.9;
+}
+
+@keyframes ripple{
+  0%{
+    transform: scale(0.8);
+  }
+  
+  50%{
+    transform: scale(1.2);
+  }
+  
+  100%{
+    transform: scale(0.8);
+  }
+}
   </style>
 </head>
 <body>
@@ -81,8 +155,6 @@
 
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -105,10 +177,6 @@
     </div>
   </div>
 
-
-
-
-
   <!-- Left and right controls -->
   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
@@ -122,20 +190,31 @@
 
 
 
+
 <div class="container-fluid bg-2 text-center">
-
-    <img src ="img/na1.jpg" width="100%">
-
-
+ <div class="alert alert-info">
+ <img src="img/founder.png" class="img-circle" alt="Cinque Terre" width="8%">
+ <br>"<b>Saya Nadia Salsabil Founder dari Guru_Luar Biasa, maksud dan tujuan saya mendirikan Guru_Luar Biasa adalah <br>dari pengalaman saya yang 
+ pernah ikut mengajar anak anak berkebutuhan khusus. pada dasarnya semua orang sama. <br> mereka berhak mendapatkan pendidikan juga
+ akses atau wadah yang menyediakan ruang untuk mereka belajar. <br> dengan adanya aplikasi ini diharapkan dapat meningkatkan
+ semangat belajar dan mereka pun tidak kesulitan dalam memahami meteri."</b>
+</div>
 </div>
 
 
 <!-- First Container -->
 <div class="container-fluid bg-1 text-right">
-  
+  <div class="row">
+  <div class="col-sm-4">
+    <img src="img/hps.png" width="100%">
+  </div>
+  <div class="col-sm-8"><h2>Aplikasi Belajar Untuk SD , SMP, SMA dan Terapi <br> Untuk Berkebutuhan Khusus</h2>
+    <p>Guru_LuarBiasa bukan hanya hadir sebagai sebuah bisnis, tetapi juga kami bertujuan untuk meningkatkan kualitas guru dengan menciptakan lapangan pekerjaan dan tambahan penghasilan bagi guru di Indonesia. Guru_Luar Biasa percaya, dengan meningkatnya kualitas guru, maka mutu pendidikan di Indonesia juga akan menjadi lebih baik.
 
-  <img src ="img/gg1.png" width="100%">
+Guru_Luar Biasa juga percaya bahwa teknologi dapat membantu siswa Berkebutuhan khusus, guru, dan orang tua untuk menjalankan aktivitasnya menjadi lebih efektif dan efisien. Untuk itu, kami bertekad untuk terus mengembangkan layanan-layanan lainnya serta berkolaborasi dengan berbagai pihak guna mencapai tujuan ini.
 
+</p></div>
+</div>
  
 </div>
 
@@ -165,9 +244,17 @@
 
   <img src ="img/g.jpg" width="80%">
 
-
-
 </footer>
+
+
+
+    <div class='ripple-background'>
+  <div class='circle xxlarge shade1'></div>
+  <div class='circle xlarge shade2'></div>
+  <div class='circle large shade3'></div>
+  <div class='circle mediun shade4'></div>
+  <div class='circle small shade5'></div>
+</div>
 
 </body>
 </html>
